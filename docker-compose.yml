@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true # if not build app.
+    environment:
+      RUST_BACKTRACE: full
+
+    volumes:
+      - ./:/code
