@@ -34,7 +34,7 @@
 * Rust >= 1.45.2 
 * conrod_core = 0.71.0
 
-### Application learning materials:
+## Application learning materials:
 
 * [The Rust Programming Language](https://doc.rust-lang.org/book/)
 * [Rust 2D, GUI library (CONROD)](https://docs.rs/conrod_core/0.71.0/conrod_core/)
