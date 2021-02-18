@@ -7,7 +7,7 @@
 
 ## Demo
 
-![Demo Windows](https://github.com/chunlinwang/rust-tetris/blob/main/assets/images/rust-tetris-demo-windows.gif)
+![Demo Windows](https://raw.githubusercontent.com/chunlinwang/rust-tetris/main/assets/images/rust-tetris-demo-windows.gif)
 
 ## Features
 
