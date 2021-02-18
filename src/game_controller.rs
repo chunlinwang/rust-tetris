@@ -52,7 +52,7 @@ pub fn move_action(tetris: &mut Tetris, move_action: MoveAction) -> bool {
                 return false;
             }
 
-            if pos_y > 0 && pos_x > 0 && back_ground[pos_y as usize][pos_x as usize] == 1 {
+            if pos_x > 0 && pos_y >= 0 && back_ground[pos_y as usize][pos_x as usize] == 1 {
                 return false;
             }
         }
@@ -85,7 +85,7 @@ pub fn game_over_checker(tetris: &mut Tetris) {
 
 pub fn check_clear_line(tetris: &mut Tetris) {
     let mut back_ground = tetris.play_ground;
-    let mut j: usize = TETRIS_CONTAINER_HEIGHT - 1;
+    let mut j: usize = 0;
     let mut to_remove_lines = Vec::new();
     let mut count_removed_lines: usize = 0;
     loop {
@@ -101,14 +101,12 @@ pub fn check_clear_line(tetris: &mut Tetris) {
             to_remove_lines.push(j);
         }
 
-        j -= 1;
+        j += 1;
 
-        if j == 0 {
+        if j == TETRIS_CONTAINER_HEIGHT {
             break;
         }
     }
-
-    to_remove_lines.reverse();
 
     for r in to_remove_lines {
         let mut k: usize = r;
@@ -137,4 +135,5 @@ pub fn check_clear_line(tetris: &mut Tetris) {
     }
 
     tetris.play_ground = back_ground;
+    tetris.back_ground = back_ground;
 }
