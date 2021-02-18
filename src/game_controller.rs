@@ -24,6 +24,7 @@ pub fn draw_play_ground(tetris: &mut Tetris) {
 }
 
 pub fn move_action(tetris: &mut Tetris, move_action: MoveAction) -> bool {
+    draw_play_ground(tetris);
     let back_ground = tetris.back_ground;
     for i in 0..MATRIX_WIDTH {
         for j in 0..MATRIX_HEIGHT {
