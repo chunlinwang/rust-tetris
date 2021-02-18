@@ -2,8 +2,8 @@
 
 ## A Rust Tetris.
 
-* [Download the game for windows](https://github.com/chunlinwang/rust-tetris/blob/master/bin/tetris.exe)
-* [Download the game for mac](https://github.com/chunlinwang/rust-tetris/blob/master/bin/tetris)
+* [Download the game for windows](https://github.com/chunlinwang/rust-tetris/blob/main/bin/tetris.exe)
+* [Download the game for mac](https://github.com/chunlinwang/rust-tetris/blob/main/bin/tetris)
 
 ## Demo
 
